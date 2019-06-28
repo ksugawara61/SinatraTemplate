@@ -26,7 +26,10 @@ $ bundle exec rspec spec/hello_spec.rb
 $ bundle exec rackup -o 0.0.0.0 -p 8080
 ```
 
-## How to Run using unicorn
+## How to Run as a unicorn process
+
+You can use sinatra app as a unicorn process.<br>
+And if you use default **config/unicorn.rb** settings, it can be used directory by accessing http://localhost:3000
 
 * Start unicorn process<br>
   *You can change app environment (ex. development, production, etc.) using ``-E`` option.

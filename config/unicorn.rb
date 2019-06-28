@@ -12,9 +12,9 @@ timeout 300
 stderr_path File.expand_path('../../log/unicorn_stderr.log', __FILE__)
 stdout_path File.expand_path('../../log/unicorn_stdout.log', __FILE__)
 
-#listen 3000
+listen 3000
 # You can use unicorn process as a unix socket.
-listen File.expand_path('../../tmp/sockets/unicorn.sock', __FILE__)
+#listen File.expand_path('../../tmp/sockets/unicorn.sock', __FILE__)
 
 pid File.expand_path('../../tmp/pids/unicorn.pid', __FILE__)
 
